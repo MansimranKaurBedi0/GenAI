@@ -22,11 +22,6 @@ async function Chatting(userProblem){
 });
 }
 async function main() {
-  // const response = await ai.models.generateContent({
-  //   model: "gemini-3-flash-preview",
-  //   contents: "Explain how AI works in a few words",
-  // });
-  // console.log(response.text);
   const userProblem=readlineSync.question("What do you want to ask? ");
   await Chatting(userProblem);
   main();
